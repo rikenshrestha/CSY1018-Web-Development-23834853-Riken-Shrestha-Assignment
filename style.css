@@ -1,11 +1,18 @@
 body {
-    background-image: url(images/web-design-background.png);
+    background-image: url(images/web-design-background.png)
 }
+
 
 .topnav {
     background-color: white;
+    opacity: 100%;
 
 }
+
+
+
+
+
 
 .logo {
     font-size: 100px;
@@ -48,10 +55,10 @@ a:hover {
 }
 
 .im1 {
-    margin-top: 37px;
+    margin-top: 25px;
     margin-left: 250px;
-    width: 200px;
-    height: 100px;
+    width: 458px;
+    height: 300px;
 
 }
 
@@ -65,5 +72,18 @@ button {
 
 button:hover {
     background-color: aqua;
+    transition: 2s;
+}
+
+.end {
+    margin-top: 150px;
+    background-color: white;
+    color: white;
+    width: 500px;
+    margin-left: 500px;
+}
+
+.end:hover {
+    background-color: black;
     transition: 2s;
 }
