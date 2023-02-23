@@ -1,15 +1,18 @@
-body {
+.body1 {
     background-image: url(images/web-design-background.png)
 }
 
 
 .topnav {
-    background-color: white;
+
     opacity: 100%;
+    color: black;
 
 }
 
-
+hr {
+    width: 1400px;
+}
 
 
 
@@ -37,7 +40,7 @@ ul li {
 }
 
 a {
-    color: black;
+
     font-style: italic;
     text-decoration: none;
 
@@ -55,10 +58,10 @@ a:hover {
 }
 
 .im1 {
-    margin-top: 25px;
-    margin-left: 250px;
-    width: 458px;
-    height: 300px;
+    margin-top: 60px;
+    margin-left: 380px;
+    width: 570px;
+    height: 370px;
 
 }
 
@@ -76,14 +79,87 @@ button:hover {
 }
 
 .end {
-    margin-top: 150px;
+
+    margin-top: 100px;
     background-color: white;
     color: white;
-    width: 500px;
-    margin-left: 500px;
+    width: 250px;
+    margin-left: 560px;
+    border-radius: 20px;
 }
 
 .end:hover {
     background-color: black;
     transition: 2s;
+}
+
+body {
+    background-image: url(images/bg-fiddler-classic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.grid-main {
+
+    margin-left: 250px;
+    display: grid;
+
+    grid-template-columns: 350px 350px 300px;
+    grid-template-rows: 250px 250px;
+    row-gap: 20px;
+    column-gap: 30px;
+
+}
+
+.item1 {
+
+    border: 2px solid whitesmoke;
+    background-color: white;
+    text-align: center;
+}
+
+.item1:hover {
+    background-color: rgb(25, 25, 130);
+}
+
+.item2 {
+    border: 2px solid whitesmoke;
+    text-align: center;
+    background-color: white;
+
+}
+
+.item2:hover {
+    background-color: rgb(25, 25, 130);
+}
+
+.item3 {
+    border: 2px solid whitesmoke;
+    text-align: center;
+    background-color: white;
+}
+
+.item3:hover {
+    background-color: rgb(25, 25, 130);
+}
+
+.item4 {
+    border: 2px solid whitesmoke;
+    text-align: center;
+    background-color: white;
+}
+
+.item4:hover {
+    background-color: rgb(25, 25, 130);
+}
+
+.item5 {
+    border: 2px solid whitesmoke;
+    text-align: center;
+    background-color: white;
+}
+
+.item5:hover {
+    background-color: rgb(25, 25, 130);
 }
