@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="con.css">
     <title>Document</title>
+    <style>
+        a {
+            color: black;
+        }
+    </style>
 </head>
 
-<body>
+<body class="body3">
     <nav class="topnav">
-        <label style="color: whitesmoke;" class="logo">Riken</label>
+        <label class="logo">Riken</label>
         <ul type="none">
             <li> <a href="index.html">Home</a></li>
             <li> <a href="portfolio.html">Portfolio</a></li>
@@ -19,9 +26,45 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <hr>
-    <div>
+    <hr class="line">
 
+    <div class=" card">
+        <div class="card-head">
+            <h3>..Feel free to contact us</h3>
+        </div>
+        <div>
+            <form class="box">
+                <label for="First name">First_name:</label><br>
+                <input type="text" name="f_name" title="please fill this"><br>
+                <label for="Surname">Sur_name:</label><br>
+                <input type="text" name="S_name" title="please fill this"><br>
+                <label for="Contact">Contact_no:</label><br>
+                <input type="number" name="number" title="please fill this"><br>
+
+                <label for="gender">Gender:</label><br>
+                <input type="radio" name="m">Male
+                <input type="radio" name="f">Female
+                <input type="radio" name="o">Other
+                <hr>
+
+                <label for="message">Your message here:</label><br>
+                <input type="text" name="message" title="Not-mandatory">
+
+
+            </form>
+
+        </div>
+    </div>
+    <div class="end">
+        <h4>__Description:</h4>
+        <p>Right now you're at the Help page,Here you can directly contact with us regarding anything related to this
+            web<br> For more follow us on:</p>
+        <img width="50px" src="images/fb.png" alt="fb logo">
+        <img width="50px" src="images/GitHub-Mark-removebg-preview.png" alt="github logo">
+        <img width="50px"
+            src="images/instagram-logo-icon-voronezh-russia-january-black-square-soft-shadow-171161232-removebg-preview.png"
+            alt="insta logo">
+    </div>
 
 </body>
 

@@ -4,13 +4,13 @@
 
 
 .topnav {
-
+    position: sticky;
     opacity: 100%;
     color: black;
 
 }
 
-hr {
+.line {
     width: 1400px;
 }
 
@@ -57,12 +57,10 @@ a:hover {
 
 }
 
-.im1 {
-    margin-top: 60px;
-    margin-left: 380px;
-    width: 570px;
-    height: 370px;
-
+.img1 {
+    width: 450px;
+    margin-left: 258px;
+    margin-top: 38px;
 }
 
 button {
@@ -93,7 +91,7 @@ button:hover {
     transition: 2s;
 }
 
-body {
+.body2 {
     background-image: url(images/bg-fiddler-classic.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,4 +160,39 @@ body {
 
 .item5:hover {
     background-color: rgb(25, 25, 130);
+}
+
+.body3 {
+    background-image: url(images/oo.jpg);
+}
+
+.card {
+    margin-left: 550px;
+    margin-top: 80px;
+    border: 2px solid lightblue;
+    width: 280px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: white;
+
+}
+
+.card-head {
+    background-color: rgb(139, 65, 139);
+    width: 200px;
+    margin-left: 35px;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.box {
+    text-align: center;
+
+}
+
+input {
+    background-color: rgb(203, 203, 203);
+    border-radius: 5px;
+    margin: 12px;
 }
