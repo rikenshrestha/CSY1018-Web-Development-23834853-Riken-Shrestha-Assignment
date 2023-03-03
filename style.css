@@ -1,5 +1,38 @@
+@keyframes slideinleft {
+    from {
+        transform: translateX(-400px);
+    }
+
+    to {
+        transform: translateX(0px);
+
+    }
+}
+
+.slideinleft {
+    margin-left: 60px;
+    font-size: xx-large;
+    margin-top: 150px;
+    animation-name: slideinleft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
+
+
+}
+
+
+
+
 .body1 {
-    background-image: url(images/web-design-background.png)
+    background-image: url(images/web-design-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ham {
+    width: 0px;
+    height: 50px;
 }
 
 
@@ -9,12 +42,6 @@
     color: black;
 
 }
-
-.line {
-    width: 1400px;
-}
-
-
 
 
 .logo {
@@ -39,6 +66,12 @@ ul li {
 
 }
 
+ul li:hover {
+    transform: translate(-10px);
+    transition: 2s;
+
+}
+
 a {
 
     font-style: italic;
@@ -47,20 +80,17 @@ a {
 }
 
 a:hover {
+    transform: translate(-10px);
     border-bottom: 2px solid skyblue;
-}
-
-.p1 {
-    margin-left: 60px;
-    font-size: xx-large;
-    margin-top: 150px;
 
 }
+
 
 .img1 {
     width: 450px;
-    margin-left: 258px;
-    margin-top: 38px;
+    margin-left: 260px;
+    margin-top: 50px;
+    height: 290px;
 }
 
 button {
@@ -74,11 +104,12 @@ button {
 button:hover {
     background-color: aqua;
     transition: 2s;
+    transform: translate(-10px);
 }
 
 .end {
 
-    margin-top: 100px;
+    margin-top: 180px;
     background-color: white;
     color: white;
     width: 250px;
@@ -91,16 +122,45 @@ button:hover {
     transition: 2s;
 }
 
+.page1grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(-100px);
+
+    }
+
+    to {
+        transform: translateY(0px);
+
+    }
+}
+
+.bounce {
+    margin-left: 500px;
+    padding: 30px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+
+
+
+
+
 .body2 {
     background-image: url(images/bg-fiddler-classic.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 
 }
 
 .grid-main {
 
-    margin-left: 250px;
+    margin-left: 200px;
     display: grid;
 
     grid-template-columns: 350px 350px 300px;
@@ -162,11 +222,23 @@ button:hover {
     background-color: rgb(25, 25, 130);
 }
 
+
 .body3 {
     background-image: url(images/oo.jpg);
 }
 
-.card {
+@keyframes slideleft {
+    from {
+        transform: translateX(-400px);
+
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.slideleft {
     margin-left: 550px;
     margin-top: 80px;
     border: 2px solid lightblue;
@@ -174,6 +246,9 @@ button:hover {
     height: 450px;
     border-radius: 20px;
     background-color: white;
+    animation-name: slideleft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 
 }
 
@@ -199,4 +274,23 @@ input {
 
 .body4 {
     background-color: black;
+}
+
+.hed {
+    color: orange;
+}
+
+.bod {
+    color: white;
+}
+
+.img0 {
+    width: 200px;
+    position: relative;
+    left: 100px;
+}
+
+.grid-img {
+    width: 250px;
+    height: 150px;
 }
