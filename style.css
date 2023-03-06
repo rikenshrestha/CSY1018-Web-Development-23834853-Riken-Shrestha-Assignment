@@ -1,3 +1,9 @@
+.body1 {
+    background-color: lightblue;
+
+
+}
+
 @keyframes slideinleft {
     from {
         transform: translateX(-400px);
@@ -21,22 +27,38 @@
 
 }
 
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
 
-
-
-.body1 {
-    background-image: url(images/web-design-background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: relative;
+    bottom: 20px;
+    left: 10px;
 }
 
-.ham {
-    width: 0px;
-    height: 50px;
+
+
+.shinobu {
+    width: 250px;
+    position: relative;
+    right: 60px;
+    top: 10px;
 }
 
+.shi {
+    display: flex;
+    margin-top: 40px;
+}
+
+.res {
+    display: grid;
+}
 
 .topnav {
+
     position: sticky;
     opacity: 100%;
     color: black;
@@ -93,7 +115,9 @@ a:hover {
     height: 290px;
 }
 
-button {
+
+
+.butt {
     color: white;
     background-color: rgb(52, 52, 252);
     font-size: 40px;
@@ -101,34 +125,36 @@ button {
     margin-left: 60px;
 }
 
-button:hover {
+.butt:hover {
     background-color: aqua;
     transition: 2s;
-    transform: translate(-10px);
+    transform: translate(20px);
 }
 
 .end {
 
-    margin-top: 180px;
+    margin-top: 100px;
     background-color: white;
     color: white;
     width: 250px;
-    margin-left: 560px;
+    margin-left: 590px;
     border-radius: 20px;
 }
 
 .end:hover {
     background-color: black;
     transition: 2s;
-}
-
-.page1grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
 
 }
 
-@keyframes bounce {
+
+.body2 {
+    background-color: lightblue;
+    background-repeat: repeat-y
+}
+
+
+@keyframes bouncer {
     from {
         transform: translateY(-100px);
 
@@ -143,20 +169,15 @@ button:hover {
 .bounce {
     margin-left: 500px;
     padding: 30px;
-    animation-name: bounce;
+}
+
+.bouncer {
+
+    animation-name: bouncer;
     animation-duration: 2s;
     animation-iteration-count: 1;
 }
 
-
-
-
-
-
-.body2 {
-    background-image: url(images/bg-fiddler-classic.png);
-
-}
 
 .grid-main {
 
@@ -170,6 +191,12 @@ button:hover {
 
 }
 
+.g1 {
+    width: 200px;
+}
+
+
+
 .item1 {
 
     border: 2px solid whitesmoke;
@@ -178,7 +205,7 @@ button:hover {
 }
 
 .item1:hover {
-    background-color: rgb(25, 25, 130);
+    background-color: black;
 }
 
 .item2 {
@@ -189,7 +216,7 @@ button:hover {
 }
 
 .item2:hover {
-    background-color: rgb(25, 25, 130);
+    background-color: black;
 }
 
 .item3 {
@@ -199,37 +226,40 @@ button:hover {
 }
 
 .item3:hover {
-    background-color: rgb(25, 25, 130);
+    background-color: black;
 }
 
 .item4 {
     border: 2px solid whitesmoke;
     text-align: center;
+    height: 280px;
     background-color: white;
 }
 
 .item4:hover {
-    background-color: rgb(25, 25, 130);
+    background-color: black;
 }
 
 .item5 {
     border: 2px solid whitesmoke;
     text-align: center;
+    height: 280px;
     background-color: white;
 }
 
 .item5:hover {
-    background-color: rgb(25, 25, 130);
+    background-color: black;
 }
 
 
 .body3 {
-    background-image: url(images/oo.jpg);
+    background-color: lightblue;
+    background-size: cover;
 }
 
 @keyframes slideleft {
     from {
-        transform: translateX(-400px);
+        transform: translateX(-800px);
 
     }
 
@@ -239,9 +269,10 @@ button:hover {
 }
 
 .slideleft {
-    margin-left: 550px;
+
+    margin-left: 580px;
     margin-top: 80px;
-    border: 2px solid lightblue;
+    border: 2px solid black;
     width: 280px;
     height: 450px;
     border-radius: 20px;
@@ -252,13 +283,19 @@ button:hover {
 
 }
 
-.card-head {
+
+
+
+.start {
+    font-size: 50px;
+}
+
+.box-head {
     background-color: rgb(139, 65, 139);
     width: 200px;
     margin-left: 35px;
     border-radius: 5px;
     color: white;
-
 }
 
 .box {
@@ -293,4 +330,67 @@ input {
 .grid-img {
     width: 250px;
     height: 150px;
+}
+
+.body5 {
+    background-color: lightblue;
+}
+
+
+
+
+.box-main {
+    margin-left: 70px;
+    display: grid;
+    margin-top: 150px;
+
+    grid-template-columns: 350px 450px 350px;
+    grid-template-rows: 550px 550px 450px;
+    column-gap: 60px;
+
+
+
+
+}
+
+.box1 {
+
+    border: 2px solid whitesmoke;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.box2 {
+    border: 2px solid whitesmoke;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.box3 {
+    border: 2px solid whitesmoke;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.box1 ol li {
+    padding: 40px;
+    padding-left: 10px;
+    text-align: none;
+}
+
+.box-main ol li:hover {
+    background-color: lightblue;
+}
+
+.pro {
+    width: 200px;
+}
+
+.box2 ol li {
+    padding: 20px;
+
 }

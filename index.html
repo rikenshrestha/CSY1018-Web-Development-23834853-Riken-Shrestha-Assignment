@@ -7,36 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>My web</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <!--internal css-->
+    <style>
+        .end {
+            margin-top: 300px;
+
+        }
+
+        .end:hover {
+            transition: 2s;
+            transform: translatex(-300px);
+        }
+
+        .topnav {
+            background-color: whitesmoke;
+        }
+
+        a {
+            color: black;
+        }
+    </style>
 </head>
-<!--internal css-->
-<style>
-    a {
-        color: black;
-    }
 
-
-
-    .topnav {
-        background-color: whitesmoke;
-    }
-</style>
 
 <body class="body1">
 
     <nav class="topnav">
+        <span class="material-symbols-outlined">
+            menu
+        </span>
 
         <img class="img0" src="images/riken-low-resolution-logo-black-on-transparent-background.png "
             alt="https://logo.com/">
         <ul type="none">
             <li> <a href="index.html">Home</a></li>
             <li> <a href="portfolio.html">Portfolio</a></li>
-            <li> <a href="Skill.html">Skills</a></li>
+            <li> <a href="workexperience.html">Experience</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="report.html">Report</a></li>
         </ul>
     </nav>
-    <div class="page1grid">
+
+    <div class="res">
         <div style="display:flex;">
             <div class="slideinleft">
                 <p>Hello There,<br>
@@ -44,26 +59,36 @@
                     <nobr>I'm into Web Development</nobr>
 
                 </p>
-                <div class="butt">
-                    <button type="button"><a style="color: whitesmoke;" href="portfolio.html">About me</a></button>
-                </div>
+
             </div>
 
-            <div>
+
+        </div>
+        <div>
+            <button class="butt" type="button"><a style="color: whitesmoke;" href="portfolio.html">About me</a></button>
+        </div>
+        <div class="shi">
+            <div class="shinobu">
+                <img src="images/flat_750x1000_075_f-removebg-preview.png"
+                    alt="https://ih1.redbubble.net/image.1455178158.3289/flat,750x1000,075,f.jpg"
+                    title="please go to the white box ">
 
 
+            </div>
+            <div class="end">
+                <h4>__Description:</h4>
+                <p>Right now you're at the home page,<br>
+                    from here you can move to any other pages <br>
+                    You are welcome.
+
+                    .<br> For more follow us on:</p>
+                <img width="50px" src="images/fb.png" alt="https://www.pinterest.com/pin/805792558307737025">
+                <img width="50px" src="images/GitHub-Mark-removebg-preview.png" alt="GitHub Logos and Usage · GitHub">
+                <img width="50px"
+                    src="images/instagram-logo-icon-voronezh-russia-january-black-square-soft-shadow-171161232-removebg-preview.png"
+                    alt="https://www.pngfind.com/mpng/ixJxR_black-and-white-instagram-logo-instagram-logo-2018/">
             </div>
         </div>
-    </div>
-
-    <div class="end">
-        <h4>__Description:</h4>
-        <p>Right now you're at the home page,<br> For more follow us on:</p>
-        <img width="50px" src="images/fb.png" alt="https://www.pinterest.com/pin/805792558307737025">
-        <img width="50px" src="images/GitHub-Mark-removebg-preview.png" alt="GitHub Logos and Usage · GitHub">
-        <img width="50px"
-            src="images/instagram-logo-icon-voronezh-russia-january-black-square-soft-shadow-171161232-removebg-preview.png"
-            alt="https://www.pngfind.com/mpng/ixJxR_black-and-white-instagram-logo-instagram-logo-2018/">
     </div>
 
 </body>
