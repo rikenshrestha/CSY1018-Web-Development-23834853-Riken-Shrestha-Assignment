@@ -1,8 +1,114 @@
-.body1 {
-    background-color: lightblue;
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(77, 77, 164);
+}
 
+.cubemain {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+.cube {
+    position: fixed;
+    bottom: -100px;
+    background: #f2f2f2;
+    opacity: .7;
+    animation: animate 15s infinite ease;
 
 }
+
+.cube:nth-child(1) {
+    width: 86px;
+    height: 86px;
+    left: 8%;
+    animation-delay: 1s;
+}
+
+.cube:nth-child(2) {
+    width: 70px;
+    height: 70px;
+    left: 20%;
+    animation-delay: 5s;
+}
+
+.cube:nth-child(3) {
+    width: 63px;
+    height: 63px;
+    left: 41%;
+    animation-delay: 10s;
+}
+
+.cube:nth-child(4) {
+    width: 82px;
+    height: 82px;
+    left: 50%;
+    animation-delay: 3s;
+}
+
+.cube:nth-child(5) {
+    width: 61x;
+    height: 61px;
+    left: 26%;
+    animation-delay: 10s;
+}
+
+.cube:nth-child(6) {
+    width: 90px;
+    height: 90px;
+    left: 65%;
+    animation-delay: 5s;
+}
+
+.cube:nth-child(7) {
+    width: 81px;
+    height: 81px;
+    left: 80%;
+    animation-delay: 10s;
+}
+
+.cube:nth-child(8) {
+    width: 71px;
+    height: 71px;
+    left: 75%;
+    animation-delay: 4s;
+}
+
+.cube:nth-child(9) {
+    width: 79px;
+    height: 79px;
+    left: 5%;
+    animation-delay: 10s;
+}
+
+
+@keyframes animate {
+    0% {
+        bottom: -100px;
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(150px);
+    }
+
+    100% {
+        bottom: 1000px;
+        transform: translateX(-300px);
+    }
+}
+
+
+
+
 
 @keyframes slideinleft {
     from {
@@ -14,6 +120,16 @@
 
     }
 }
+
+span {
+    color: white;
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+    height: 5px;
+}
+
+
 
 .slideinleft {
     margin-left: 60px;
@@ -34,35 +150,21 @@
         'GRAD' 0,
         'opsz' 48;
 
-    position: relative;
-    bottom: 20px;
-    left: 10px;
+
 }
 
 
 
-.shinobu {
-    width: 250px;
-    position: relative;
-    right: 60px;
-    top: 10px;
-}
 
-.shi {
-    display: flex;
-    margin-top: 40px;
-}
-
-.res {
-    display: grid;
-}
-
-.topnav {
-
+nav {
+    width: auto;
     position: sticky;
-    opacity: 100%;
-    color: black;
+    opacity: 90%;
+    background-image: linear-gradient(45deg, black, rgb(94, 94, 222))
+}
 
+a {
+    color: black;
 }
 
 
@@ -81,14 +183,14 @@ nav ul {
 
 }
 
-ul li {
+nav ul li {
     display: inline-block;
     padding: 20px;
     font-size: x-large;
 
 }
 
-ul li:hover {
+nav ul li:hover {
     transform: translate(-10px);
     transition: 2s;
 
@@ -103,7 +205,7 @@ a {
 
 a:hover {
     transform: translate(-10px);
-    border-bottom: 2px solid skyblue;
+    border-bottom: 2px solid white;
 
 }
 
@@ -119,14 +221,14 @@ a:hover {
 
 .butt {
     color: white;
-    background-color: rgb(52, 52, 252);
+    background-color: black;
     font-size: 40px;
     border-radius: 20px;
     margin-left: 60px;
 }
 
 .butt:hover {
-    background-color: aqua;
+    background-color: whitesmoke;
     transition: 2s;
     transform: translate(20px);
 }
@@ -137,21 +239,31 @@ a:hover {
     background-color: white;
     color: white;
     width: 250px;
+    height: 205px;
     margin-left: 590px;
     border-radius: 20px;
 }
 
 .end:hover {
-    background-color: black;
+    background-color: rgb(77, 77, 164);
     transition: 2s;
 
 }
 
+@media only screen and (max-width:1046px) {
+    .topnav ul li {
+        display: none;
 
-.body2 {
-    background-color: lightblue;
-    background-repeat: repeat-y
+    }
+
+    .end {
+        display: none;
+        float: left;
+    }
 }
+
+
+
 
 
 @keyframes bouncer {
@@ -199,63 +311,155 @@ a:hover {
 
 .item1 {
 
-    border: 2px solid whitesmoke;
+    border: 2px solid rgb(77, 77, 164);
     background-color: white;
     text-align: center;
 }
 
 .item1:hover {
-    background-color: black;
+    background-color: rgb(77, 77, 164);
+    transition: 2s;
+    transform-style: preserve-3d;
 }
 
 .item2 {
-    border: 2px solid whitesmoke;
+    border: 2px solid rgb(77, 77, 164);
     text-align: center;
     background-color: white;
 
 }
 
 .item2:hover {
-    background-color: black;
+    background-color: rgb(77, 77, 164);
+    transition: 2s;
+    transform-style: preserve-3d;
 }
 
 .item3 {
-    border: 2px solid whitesmoke;
+    border: 2px solid rgb(77, 77, 164);
     text-align: center;
     background-color: white;
 }
 
 .item3:hover {
-    background-color: black;
+    background-color: rgb(77, 77, 164);
+    transition: 2s;
+    transform-style: preserve-3d;
 }
 
 .item4 {
-    border: 2px solid whitesmoke;
+    border: 2px solid rgb(77, 77, 164);
     text-align: center;
     height: 280px;
     background-color: white;
 }
 
 .item4:hover {
-    background-color: black;
+    background-color: rgb(77, 77, 164);
+    transition: 2s;
+    transform-style: preserve-3d;
 }
 
 .item5 {
-    border: 2px solid whitesmoke;
+    border: 2px solid rgb(77, 77, 164);
     text-align: center;
     height: 280px;
     background-color: white;
 }
 
 .item5:hover {
-    background-color: black;
+    background-color: rgb(77, 77, 164);
+    transition: 2s;
+    transform-style: preserve-3d;
+}
+
+.exphead {
+    font-size: 100px;
+
+}
+
+.expli {
+    font-size: larger;
+}
+
+.box-main {
+    margin-left: 70px;
+    display: grid;
+    margin-top: 150px;
+
+    grid-template-columns: 350px 450px 350px;
+
+    column-gap: 60px;
+}
+
+.box1 {
+
+    border: 2px solid whitesmoke;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
 }
 
 
-.body3 {
-    background-color: lightblue;
-    background-size: cover;
+.box2 {
+    border: 2px solid whitesmoke;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
 }
+
+
+.box3 {
+    border: 2px solid whitesmoke;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+@media only screen and(m-width:1373px) {
+    .box3 {
+        display: none;
+    }
+
+}
+
+
+.box1 ol li {
+    padding: 40px;
+    padding-left: 10px;
+    text-align: none;
+}
+
+.box-main ol li:hover {
+    background-color: rgb(77, 77, 164);
+}
+
+.pro {
+    width: 200px;
+}
+
+.box2 ol li {
+    padding: 20px;
+
+}
+
+.box3 ol li {
+    padding: 30px;
+}
+
+.box4 {
+    text-align: center;
+    margin-left: 220px;
+    margin-top: 80px;
+    border: 2px solid whitesmoke;
+    background-color: white;
+    border-radius: 10px;
+    width: 1000px;
+    text-align: center;
+}
+
+
 
 @keyframes slideleft {
     from {
@@ -274,13 +478,33 @@ a:hover {
     margin-top: 80px;
     border: 2px solid black;
     width: 280px;
-    height: 450px;
+    height: 460px;
     border-radius: 20px;
     background-color: white;
     animation-name: slideleft;
     animation-duration: 2s;
     animation-iteration-count: 1;
 
+}
+
+.conhead {
+    text-decoration: none;
+}
+
+.conhead:hover {
+    transform: translateX(-15px);
+    border-bottom: 5px white;
+}
+
+.sub {
+    margin-top: 5px;
+    border-radius: 10px;
+
+
+}
+
+.sub:hover {
+    background-color: gray;
 }
 
 
@@ -309,9 +533,18 @@ input {
     margin: 12px;
 }
 
-.body4 {
-    background-color: black;
+.foot {
+    background-color: white;
+    text-align: center;
+    width: 1425px;
+    height: 55px;
+    opacity: 70%;
+
 }
+
+
+
+
 
 .hed {
     color: orange;
@@ -330,67 +563,4 @@ input {
 .grid-img {
     width: 250px;
     height: 150px;
-}
-
-.body5 {
-    background-color: lightblue;
-}
-
-
-
-
-.box-main {
-    margin-left: 70px;
-    display: grid;
-    margin-top: 150px;
-
-    grid-template-columns: 350px 450px 350px;
-    grid-template-rows: 550px 550px 450px;
-    column-gap: 60px;
-
-
-
-
-}
-
-.box1 {
-
-    border: 2px solid whitesmoke;
-    background-color: white;
-    border-radius: 10px;
-    text-align: center;
-}
-
-
-.box2 {
-    border: 2px solid whitesmoke;
-    text-align: center;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.box3 {
-    border: 2px solid whitesmoke;
-    text-align: center;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.box1 ol li {
-    padding: 40px;
-    padding-left: 10px;
-    text-align: none;
-}
-
-.box-main ol li:hover {
-    background-color: lightblue;
-}
-
-.pro {
-    width: 200px;
-}
-
-.box2 ol li {
-    padding: 20px;
-
 }
