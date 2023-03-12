@@ -4,6 +4,12 @@ body {
     background-color: rgb(77, 77, 164);
 }
 
+.img0 {
+    width: 200px;
+    position: relative;
+    left: 50px;
+}
+
 .cubemain {
     position: relative;
     width: 100%;
@@ -299,6 +305,10 @@ a:hover {
     margin-left: 200px;
 }
 
+.spidimg:hover {
+    transform: scale(1.4, 1.4);
+    transition: 2s;
+}
 
 
 .img1 {
@@ -632,6 +642,7 @@ a:hover {
 }
 
 
+
 .conhead {
     text-decoration: none;
     text-shadow: 1px 1px 2px black, 0 0 20px white, 0 0 5px rgb(77, 77, 164);
@@ -702,11 +713,7 @@ input {
     color: white;
 }
 
-.img0 {
-    width: 200px;
-    position: relative;
-    left: 100px;
-}
+
 
 .grid-img {
     width: 250px;
@@ -714,5 +721,5 @@ input {
 }
 
 .repimg {
-    width: 150px;
+    width: 450px;
 }
