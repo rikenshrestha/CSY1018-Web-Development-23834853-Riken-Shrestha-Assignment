@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: rgb(77, 77, 164);
+    background-color: rgb(77, 77, 164);
 }
 
 .cubemain {
@@ -20,89 +20,165 @@ body {
 .cube {
     position: fixed;
     bottom: -100px;
-    background: #f2f2f2;
-    opacity: .7;
+
+    opacity: .3;
     animation: animate 15s infinite ease;
 
 }
 
 .cube:nth-child(1) {
-    width: 86px;
-    height: 86px;
+    width: 46px;
+    height: 46px;
     left: 8%;
     animation-delay: 1s;
 }
 
 .cube:nth-child(2) {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     left: 20%;
     animation-delay: 5s;
 }
 
 .cube:nth-child(3) {
-    width: 63px;
-    height: 63px;
+    width: 43px;
+    height: 43px;
     left: 41%;
-    animation-delay: 10s;
+    animation-delay: 7s;
 }
 
 .cube:nth-child(4) {
-    width: 82px;
-    height: 82px;
+    width: 52px;
+    height: 52px;
     left: 50%;
     animation-delay: 3s;
 }
 
 .cube:nth-child(5) {
-    width: 61x;
-    height: 61px;
+    width: 41px;
+    height: 41px;
     left: 26%;
-    animation-delay: 10s;
+    animation-delay: 9s;
 }
 
 .cube:nth-child(6) {
-    width: 90px;
-    height: 90px;
+    width: 40px;
+    height: 40px;
     left: 65%;
     animation-delay: 5s;
 }
 
 .cube:nth-child(7) {
-    width: 81px;
-    height: 81px;
+    width: 39px;
+    height: 39px;
     left: 80%;
-    animation-delay: 10s;
+    animation-delay: 7s;
 }
 
 .cube:nth-child(8) {
-    width: 71px;
-    height: 71px;
+    width: 41px;
+    height: 41px;
     left: 75%;
     animation-delay: 4s;
 }
 
 .cube:nth-child(9) {
-    width: 79px;
-    height: 79px;
+    width: 49px;
+    height: 49px;
     left: 5%;
-    animation-delay: 10s;
+    animation-delay: 2s;
+}
+
+.cube:nth-child(10) {
+    width: 39px;
+    height: 39px;
+    left: 3%;
+    animation-delay: 4s;
+}
+
+.cube:nth-child(11) {
+    width: 49px;
+    height: 49px;
+    left: 21%;
+    animation-delay: 2s;
+}
+
+.cube:nth-child(12) {
+    width: 55px;
+    height: 55px;
+    left: 31%;
+    animation-delay: 4s;
+}
+
+.cube:nth-child(13) {
+    width: 49px;
+    height: 49px;
+    left: 41%;
+    animation-delay: 6s;
+}
+
+.cube:nth-child(14) {
+    width: 59px;
+    height: 59px;
+    left: 51%;
+    animation-delay: 2s;
+}
+
+.cube:nth-child(15) {
+    width: 49px;
+    height: 49px;
+    left: 61%;
+    animation-delay: 4s;
+}
+
+.cube:nth-child(16) {
+    width: 69px;
+    height: 69px;
+    left: 71%;
+    animation-delay: 6s;
+}
+
+.cube:nth-child(17) {
+    width: 49px;
+    height: 49px;
+    left: 78%;
+    animation-delay: 9s;
+}
+
+.cube:nth-child(17) {
+    width: 59px;
+    height: 59px;
+    left: 85%;
+    animation-delay: 11s;
+}
+
+.cube:nth-child(18) {
+    width: 69px;
+    height: 69px;
+    left: 93%;
+    animation-delay: 13s;
+}
+
+
+
+.main {
+    display: flex;
 }
 
 
 @keyframes animate {
     0% {
-        bottom: -100px;
+        bottom: 800px;
         transform: translateX(0);
     }
 
     50% {
-        transform: translateX(150px);
+        transform: translateX(-150px);
     }
 
     100% {
-        bottom: 1000px;
-        transform: translateX(-300px);
+        bottom: -1000px;
+        transform: translateX(300px);
     }
 }
 
@@ -135,6 +211,7 @@ span {
     margin-left: 60px;
     font-size: xx-large;
     margin-top: 150px;
+    text-shadow: 1px 1px 2px black, 0 0 20px white, 0 0 5px rgb(77, 77, 164);
     animation-name: slideinleft;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -163,9 +240,6 @@ nav {
     background-image: linear-gradient(45deg, black, rgb(94, 94, 222))
 }
 
-a {
-    color: black;
-}
 
 
 .logo {
@@ -176,6 +250,12 @@ a {
 
 
 }
+
+.icon {
+    width: 150px;
+    margin-left: 40px;
+}
+
 
 nav ul {
     float: right;
@@ -200,6 +280,7 @@ a {
 
     font-style: italic;
     text-decoration: none;
+    color: black;
 
 }
 
@@ -208,6 +289,16 @@ a:hover {
     border-bottom: 2px solid white;
 
 }
+
+
+.spidimg {
+    width: 280px;
+    height: 280px;
+    border-radius: 140px;
+    margin-top: 60px;
+    margin-left: 200px;
+}
+
 
 
 .img1 {
@@ -220,7 +311,7 @@ a:hover {
 
 
 .butt {
-    color: white;
+    color: whitesmoke;
     background-color: black;
     font-size: 40px;
     border-radius: 20px;
@@ -228,7 +319,7 @@ a:hover {
 }
 
 .butt:hover {
-    background-color: whitesmoke;
+    background-color: white;
     transition: 2s;
     transform: translate(20px);
 }
@@ -236,8 +327,8 @@ a:hover {
 .end {
 
     margin-top: 100px;
-    background-color: white;
-    color: white;
+    background-color: rgb(246, 239, 239);
+    color: rgb(250, 243, 243);
     width: 250px;
     height: 205px;
     margin-left: 590px;
@@ -250,18 +341,27 @@ a:hover {
 
 }
 
-@media only screen and (max-width:1046px) {
-    .topnav ul li {
+@media only screen and (max-width:1111px) {
+    nav ul li {
         display: none;
+    }
 
+    .main {
+        flex-direction: column;
+    }
+
+    .spidimg {
+        margin-left: 20px;
+    }
+
+    .butt {
+        margin-top: 20px;
     }
 
     .end {
-        display: none;
-        float: left;
+        margin-left: 100px;
     }
 }
-
 
 
 
@@ -279,14 +379,16 @@ a:hover {
 }
 
 .bounce {
-    margin-left: 500px;
+    text-align: center;
     padding: 30px;
+    text-shadow: 1px 1px 2px black, 0 0 20px white, 0 0 5px rgb(77, 77, 164);
+
 }
 
 .bouncer {
 
     animation-name: bouncer;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: 1;
 }
 
@@ -295,16 +397,22 @@ a:hover {
 
     margin-left: 200px;
     display: grid;
-
     grid-template-columns: 350px 350px 300px;
-    grid-template-rows: 250px 250px;
     row-gap: 20px;
     column-gap: 30px;
 
 }
 
+
 .g1 {
     width: 200px;
+}
+
+.g1:hover {
+    transform: scale(1.7, 1.7);
+    transition: 2s;
+
+
 }
 
 
@@ -373,8 +481,12 @@ a:hover {
     transform-style: preserve-3d;
 }
 
+
+
 .exphead {
     font-size: 100px;
+    text-shadow: 1px 1px 2px black, 0 0 20px white, 0 0 5px rgb(77, 77, 164);
+
 
 }
 
@@ -390,6 +502,10 @@ a:hover {
     grid-template-columns: 350px 450px 350px;
 
     column-gap: 60px;
+}
+
+.box-main h3 {
+    text-shadow: 1px 1px 2px black, 0 0 20px white, 0 0 5px rgb(77, 77, 164);
 }
 
 .box1 {
@@ -417,9 +533,38 @@ a:hover {
 
 }
 
-@media only screen and(m-width:1373px) {
-    .box3 {
-        display: none;
+.pro {
+    width: 300px;
+}
+
+@media only screen and (max-width:1111px) {
+    .box-main {
+        display: flex;
+        flex-direction: column;
+        /* grid-template-rows: auto auto auto; */
+        row-gap: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .grid-main {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px
+    }
+
+    .g1 {
+        width: 250px;
+    }
+
+    .slideleft {
+        margin-left: 10px;
+
+    }
+
+    .pro {
+        width: 200px;
     }
 
 }
@@ -428,16 +573,14 @@ a:hover {
 .box1 ol li {
     padding: 40px;
     padding-left: 10px;
-    text-align: none;
+
 }
 
 .box-main ol li:hover {
     background-color: rgb(77, 77, 164);
 }
 
-.pro {
-    width: 200px;
-}
+
 
 .box2 ol li {
     padding: 20px;
@@ -480,6 +623,7 @@ a:hover {
     width: 280px;
     height: 460px;
     border-radius: 20px;
+
     background-color: white;
     animation-name: slideleft;
     animation-duration: 2s;
@@ -487,8 +631,11 @@ a:hover {
 
 }
 
+
 .conhead {
     text-decoration: none;
+    text-shadow: 1px 1px 2px black, 0 0 20px white, 0 0 5px rgb(77, 77, 164);
+    margin-left: 10px;
 }
 
 .conhead:hover {
@@ -536,11 +683,12 @@ input {
 .foot {
     background-color: white;
     text-align: center;
-    width: 1425px;
+    width: auto;
     height: 55px;
     opacity: 70%;
 
 }
+
 
 
 
@@ -563,4 +711,8 @@ input {
 .grid-img {
     width: 250px;
     height: 150px;
+}
+
+.repimg {
+    width: 150px;
 }
