@@ -207,11 +207,10 @@ body {
 }
 
 /*hamburger menu*/
-span {
-    display: none;
-}
 
-.material-symbols-outlined {
+
+
+.ham {
     font-variation-settings:
         'FILL' 0,
         'wght' 400,
@@ -513,9 +512,7 @@ a:hover {
     column-gap: 60px;
 }
 
-.box-main h3 {
-    text-shadow: 1px 1px 2px black, 0 0 20px white, 0 0 5px rgb(77, 77, 164);
-}
+
 
 .box1 {
 
@@ -532,6 +529,7 @@ a:hover {
     text-align: center;
     background-color: white;
     border-radius: 10px;
+    font-family: sans-serif;
 }
 
 
@@ -565,6 +563,7 @@ a:hover {
 
 .box2 ol li {
     padding: 20px;
+
 
 }
 
@@ -749,8 +748,13 @@ input {
         margin-left: 50px;
     }
 
+    .repimg {
+        width: 150px;
+    }
 
-
+    .ham {
+        display: inline;
+    }
 
 
 
