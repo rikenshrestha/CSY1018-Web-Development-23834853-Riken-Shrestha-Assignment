@@ -289,8 +289,9 @@ a:hover {
 }
 
 .icon {
-    width: 150px;
-    margin-left: 40px;
+    width: 85px;
+    margin-left: 80px;
+
 }
 
 
@@ -744,12 +745,11 @@ input {
 
     }
 
-    a:hover,
-    a.active {
-
-        background-color: lightblue;
-        opacity: 80%;
+    a {
+        background-color: rgb(215, 228, 232);
     }
+
+
 
     .main {
         flex-direction: column;
@@ -769,7 +769,7 @@ input {
     }
 
     #checkn:checked~ul {
-        left: 28%;
+        left: 23%;
     }
 
 
